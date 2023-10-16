@@ -1,3 +1,0 @@
-C:/Users/spaji/Documents/CLionProjects/m_over_n/cmake-build-debug/CMakeFiles/m_over_n.dir
-C:/Users/spaji/Documents/CLionProjects/m_over_n/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/spaji/Documents/CLionProjects/m_over_n/cmake-build-debug/CMakeFiles/rebuild_cache.dir
