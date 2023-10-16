@@ -30,17 +30,27 @@ int sekv_pret(double V[], int n, double x){
 }
 
 //Array sorting
-void sort(double V[], int n){
-    for(int i = 0; i < n - 1; i++){
-        for(int j = 0; j < n - 1; j++){
-            if(V[j] > V[j + 1]) {
-                double temp = V[j];
-                V[j] = V[j + 1];
-                V[j + 1] = temp;
+void sort(double V[], int low, int high){
+    if (low < high) {
+        // Partition the array
+        double pivot = V[high];
+        int i = low - 1;
+        for (int j = low; j <= high - 1; j++) {
+            if (V[j] < pivot) {
+                i++;
+                double temp = V[i];
+                V[i] = V[j];
+                V[j] = temp;
             }
         }
+        double temp = V[i+1];
+        V[i+1] = V[high];
+        V[high] = temp;
+
+        // Recursively sort the sub-arrays
+        sort(V, low, i);
+        sort(V, i+2, high);
     }
-    printf("\nSort is finished!\n");
 }
 
 //Binary search
@@ -79,7 +89,7 @@ int main() {
     printf("Print out the array Y/N? >> ");
     scanf("%c", &choice);
     getchar();
-    double V[n];
+    double *V = malloc(n * sizeof(double));
 
 //Filling the array with random numbers
     start = clock();
@@ -104,7 +114,8 @@ int main() {
 
 //Array sorting algorithm
     start = clock();
-    sort(V, n);
+    sort(V, 0, n - 1);
+    printf("\nSort is finished!\n");
     end = clock();
     printf("Sort time %lf\n", ((double)(end - start))/CLOCKS_PER_SEC*1000);
 
@@ -122,5 +133,6 @@ int main() {
         }
     }
     system("pause");
+    free(V);
     return 0;
 }

@@ -14,6 +14,7 @@ int main() {
     int n;
     clock_t start, end;
 
+// Input n number for calculating
     printf("Input n >> ");
     scanf("%d", &n);
 
