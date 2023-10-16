@@ -1,3 +1,0 @@
-C:/Users/spaji/Documents/CLionProjects/SortingAlgorithm/cmake-build-debug/CMakeFiles/SortingAlgorithm.dir
-C:/Users/spaji/Documents/CLionProjects/SortingAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/spaji/Documents/CLionProjects/SortingAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
