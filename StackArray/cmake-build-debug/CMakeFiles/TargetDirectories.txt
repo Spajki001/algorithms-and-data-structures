@@ -1,3 +1,0 @@
-C:/Users/spaji/Documents/CLionProjects/StackArray/cmake-build-debug/CMakeFiles/StackArray.dir
-C:/Users/spaji/Documents/CLionProjects/StackArray/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/spaji/Documents/CLionProjects/StackArray/cmake-build-debug/CMakeFiles/rebuild_cache.dir
